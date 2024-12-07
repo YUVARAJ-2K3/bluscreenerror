@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" id="player3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="web.css" type="text/css">
+    <link rel="preload"as="image"href="1.png">
+    <link rel="preload"as="image"href="13.png">
+    <link rel="preload"as="image"href="27.png">
+    <link rel="preload"as="image"href="42.png">
+    <link rel="preload"as="image"href="57.png">
+    <link rel="preload"as="image"href="72.png">
+    <link rel="preload"as="image"href="89.png">
+    <link rel="preload"as="image"href="100.png">
+
+    
+    <style>
+body
+{   
+
+    animation: body 3s alternate;
+}        
+.menu
+{
+    width:100%;
+    float: left;
+    
+    
+}
+ul
+{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    
+    
+}
+ul li
+{
+    margin-left: 100px;
+    margin-top: 20px;
+    padding-left: 200px ;
+    
+}
+ul li a
+{   font-weight: bolder;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(245, 221, 7);
+    text-decoration: none;
+   
+}
+ul li a:hover
+{
+    color: orangered;
+}
+@keyframes body {
+    
+    0% {background-image: url(1.png);}
+    13% {background-image:url(13.png)}
+    27% {background-image:url(27.png);}
+    42% {background-image:url(42.png);}
+    57% {background-image:url(57.png);}
+    72% {background-image:url(72.png);}
+    89% {background-image:url(89.png);}
+    100% {background-image:url(100.png);}
+}
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>HOMEPAGE</title>
+</head>
+<body onload="goFullscreen('player3');" style="background-image: url(100.png);">
+<script>
+ function goFullscreen() {
+ var element = document.getElementById("player3");
+if (element.mozRequestFullScreen) {
+       element.mozRequestFullScreen();
+} else if (element.webkitRequestFullScreen) {
+  element.webkitRequestFullScreen();}
+   }
+</script>  
+</body>
+</html>
